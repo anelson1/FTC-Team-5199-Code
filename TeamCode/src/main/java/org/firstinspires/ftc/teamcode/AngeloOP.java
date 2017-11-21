@@ -17,6 +17,10 @@ public class AngeloOP extends OpMode {
 
     @Override
     public void init() {
+        telemetry.addData("Robot", "Started");
+        telemetry.addData("Hunter's Good Succ™", "Functioning");
+        telemetry.addData("Traps", "Gay");
+
         leftFront = (DcMotor) hardwareMap.get("lFront");
         rightFront = (DcMotor) hardwareMap.get("rFront");
         leftRear = (DcMotor) hardwareMap.get("lRear");
