@@ -18,7 +18,7 @@ public class AngeloOP extends OpMode {
     @Override
     public void init() {
         telemetry.addData("Robot", "Started");
-        telemetry.addData("Hunter's Good Succ™", "Functioning");
+        telemetry.addData("Hunter's Succ™", "Good");
         telemetry.addData("Traps", "Gay");
 
         leftFront = (DcMotor) hardwareMap.get("lFront");
@@ -49,9 +49,6 @@ public class AngeloOP extends OpMode {
         leftRear.setPower(-v3);
         rightRear.setPower(v4);
 
-        glyph.setPosition(glyphState ? 0 : .5);
-        if(gamepad1.b && !lastState) glyphState = !glyphState;
-        lastState = gamepad1.b;
         double power0;
         double power1;
         double power2 = 0;
